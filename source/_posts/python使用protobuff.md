@@ -1,7 +1,7 @@
 ---
 title: python使用protobuff
 date: 2018-09-30 23:30:28
-tags:
+tags: protocol buffer
 ---
 
 ### 1、下载protoc

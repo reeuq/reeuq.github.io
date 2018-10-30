@@ -2,7 +2,7 @@
 layout: topic
 title: NLTK Tools - Stanford Parser使用
 date: 2018-09-30 08:33:23
-tags: 
+tags: Stanford Tools
 ---
 
 # python
