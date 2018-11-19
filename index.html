@@ -334,6 +334,9 @@
       
         
           <p>计算机最早是只有英文ASCII码，但世界上除了英语，还有很多其他语言，因此只有ASCII码编码显然不适合这种情况。</p>
+<p>于是后来在中国、日本等其他国家都有了自己的一套编码，但是这样就出现问题了，不同国家之间数据传输，就会出现乱码。</p>
+<p>为了让全世界都可以使用计算机，于是有了Unicode编码方式，俗称万国码，可以存储好几万个字符。（unicode专题TODO）</p>
+<p><strong>因此计算机内存中，对字符串的编码使用的都是Unicode，作为中间者。</strong></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/11/19/python编码/#more" rel="contents">
@@ -457,23 +460,16 @@
 
       
         
-          
-            <h3 id="1、下载protoc"><a href="#1、下载protoc" class="headerlink" title="1、下载protoc"></a>1、下载protoc</h3><p>protoc为编译器，根据自己的系统下载相应的protoc，<a href="https://github.com/protocolbuffers/protobuf/releases" target="_blank" rel="noopener">下载地址</a></p>
+          <h3 id="1、下载protoc"><a href="#1、下载protoc" class="headerlink" title="1、下载protoc"></a>1、下载protoc</h3><p>protoc为编译器，根据自己的系统下载相应的protoc，<a href="https://github.com/protocolbuffers/protobuf/releases" target="_blank" rel="noopener">下载地址</a></p>
 <h3 id="2、配置protoc环境变量"><a href="#2、配置protoc环境变量" class="headerlink" title="2、配置protoc环境变量"></a>2、配置protoc环境变量</h3><p>将protoc压缩包中/bin目录下的protoc.exe（可以拷贝至别的路径下）所在路径放入环境变量（path）中</p>
-<h3 id="3、安装-ProtoBuf-相关的-python-依赖库"><a href="#3、安装-ProtoBuf-相关的-python-依赖库" class="headerlink" title="3、安装 ProtoBuf 相关的 python 依赖库"></a>3、安装 ProtoBuf 相关的 python 依赖库</h3><p>3.1、方法一</p>
-<blockquote>
-<p>$ pip install protobuf</p>
-</blockquote>
-<p>3.2、方法二</p>
-<p>从源码手动编译安装，<a href="https://github.com/protocolbuffers/protobuf/releases" target="_blank" rel="noopener">下载地址</a></p>
-<h3 id="4、创建项目demo，编写temp-proto文件"><a href="#4、创建项目demo，编写temp-proto文件" class="headerlink" title="4、创建项目demo，编写temp.proto文件"></a>4、创建项目demo，编写temp.proto文件</h3><figure class="highlight protobuf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">syntax = <span class="string">"proto2"</span>;</span><br><span class="line"><span class="keyword">package</span> example;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">message</span> <span class="title">person</span> </span>&#123;   </span><br><span class="line">    <span class="built_in">int32</span> id = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">string</span> name = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">message</span> <span class="title">all_person</span> </span>&#123;    </span><br><span class="line">    <span class="keyword">repeated</span> person Per = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="5、使用protoc编译temp-proto"><a href="#5、使用protoc编译temp-proto" class="headerlink" title="5、使用protoc编译temp.proto"></a>5、使用protoc编译temp.proto</h3><blockquote>
-<p>$ protoc –python_out=. temp.proto</p>
-<p>会生成temp_pb2.py文件</p>
-</blockquote>
-<h3 id="6、引用temp-pb2"><a href="#6、引用temp-pb2" class="headerlink" title="6、引用temp_pb2"></a>6、引用temp_pb2</h3><p>注意需要从项目根目录进行引用（否则会报错）</p>
-
-          
+<h3 id="3、安装-ProtoBuf-相关的-python-依赖库"><a href="#3、安装-ProtoBuf-相关的-python-依赖库" class="headerlink" title="3、安装 ProtoBuf 相关的 python 依赖库"></a>3、安装 ProtoBuf 相关的 python 依赖库</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/30/python使用protobuff/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -590,16 +586,18 @@
 
       
         
-          
-            <h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><h3 id="1、安装NLTK包"><a href="#1、安装NLTK包" class="headerlink" title="1、安装NLTK包"></a>1、安装NLTK包</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install NLTK</span><br></pre></td></tr></table></figure>
+          <h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><h3 id="1、安装NLTK包"><a href="#1、安装NLTK包" class="headerlink" title="1、安装NLTK包"></a>1、安装NLTK包</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install NLTK</span><br></pre></td></tr></table></figure>
 <h3 id="2、下载Stanford-Parser工具包"><a href="#2、下载Stanford-Parser工具包" class="headerlink" title="2、下载Stanford Parser工具包"></a>2、下载Stanford Parser工具包</h3><p><a href="https://nlp.stanford.edu/software/lex-parser.shtml" target="_blank" rel="noopener">下载地址</a></p>
 <ul>
-<li><p>解压后有stanford-parser.jar及stanford-parser-3.9.1-models.jar文件，将其放入项目文件目录，并将目录添加至系统环境变量</p>
-<img src="/2018/09/30/NLTK-Tools-Stanford-Parser使用/1538269883216.png">
-</li>
+<li>解压后有stanford-parser.jar及stanford-parser-3.9.1-models.jar文件，将其放入项目文件目录，并将目录添加至系统环境变量</li>
 </ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/30/NLTK-Tools-Stanford-Parser使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
