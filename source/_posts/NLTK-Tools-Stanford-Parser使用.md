@@ -19,5 +19,6 @@ pip install NLTK
 
 - 解压后有stanford-parser.jar及stanford-parser-3.9.1-models.jar文件，将其放入项目文件目录，并将目录添加至系统环境变量
 
-  {% asset_img 1538269883216.png %}
+<!-- more -->
 
+  {% asset_img 1538269883216.png %}
