@@ -1,8 +1,8 @@
 ---
-layout: topic
 title: NLTK Tools - Stanford Parser使用
 date: 2018-09-30 08:33:23
-tags: Stanford Tools
+tags: [Stanford Tools,NLTK]
+categories: python工具包使用
 ---
 
 # python

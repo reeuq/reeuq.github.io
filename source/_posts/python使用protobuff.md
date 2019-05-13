@@ -2,6 +2,7 @@
 title: python使用protobuff
 date: 2018-09-30 23:30:28
 tags: protocol buffer
+categories: python工具包使用
 ---
 
 ### 1、下载protoc

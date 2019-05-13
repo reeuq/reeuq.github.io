@@ -1,7 +1,8 @@
 ---
 title: python编码
 date: 2018-11-19 14:37:28
-tags: 
+tags: [python,encode]
+categories: python疑难杂症
 ---
 计算机最早是只有英文ASCII码，但世界上除了英语，还有很多其他语言，因此只有ASCII码编码显然不适合这种情况。
 
