@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="参考https://www.jianshu.com/p/2ec5d16db02b 、 https://blog.csdn.net/hehaibo2008/article/details/70768955 开放端口安装iptables1sudo apt-get install iptables 添加规则1sudo iptables -I INPUT -p tcp --dport 80 -j ACCE">
+<meta name="description" content="参考https://www.jianshu.com/p/2ec5d16db02b 、 https://blog.csdn.net/hehaibo2008/article/details/70768955 开放端口1、安装iptables1sudo apt-get install iptables 2、添加规则1sudo iptables -I INPUT -p tcp --dport 80 -j">
 <meta name="keywords" content="ubuntu,iptables">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubuntu开放指定端口">
 <meta property="og:url" content="http://yadav.wang/2019/05/13/ubuntu开放指定端口/index.html">
 <meta property="og:site_name" content="何慕的BLOG">
-<meta property="og:description" content="参考https://www.jianshu.com/p/2ec5d16db02b 、 https://blog.csdn.net/hehaibo2008/article/details/70768955 开放端口安装iptables1sudo apt-get install iptables 添加规则1sudo iptables -I INPUT -p tcp --dport 80 -j ACCE">
+<meta property="og:description" content="参考https://www.jianshu.com/p/2ec5d16db02b 、 https://blog.csdn.net/hehaibo2008/article/details/70768955 开放端口1、安装iptables1sudo apt-get install iptables 2、添加规则1sudo iptables -I INPUT -p tcp --dport 80 -j">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-13T08:09:38.694Z">
+<meta property="og:updated_time" content="2019-05-13T08:44:56.509Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu开放指定端口">
-<meta name="twitter:description" content="参考https://www.jianshu.com/p/2ec5d16db02b 、 https://blog.csdn.net/hehaibo2008/article/details/70768955 开放端口安装iptables1sudo apt-get install iptables 添加规则1sudo iptables -I INPUT -p tcp --dport 80 -j ACCE">
+<meta name="twitter:description" content="参考https://www.jianshu.com/p/2ec5d16db02b 、 https://blog.csdn.net/hehaibo2008/article/details/70768955 开放端口1、安装iptables1sudo apt-get install iptables 2、添加规则1sudo iptables -I INPUT -p tcp --dport 80 -j">
 
 
 
@@ -315,19 +315,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/web前端/" itemprop="url" rel="index">
-                    <span itemprop="name">web前端</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/web前端/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
+                  <a href="/categories/linux使用/" itemprop="url" rel="index">
+                    <span itemprop="name">linux使用</span>
                   </a>
                 </span>
 
@@ -364,14 +353,14 @@
 
       
         <p>参考<a href="https://www.jianshu.com/p/2ec5d16db02b" target="_blank" rel="noopener">https://www.jianshu.com/p/2ec5d16db02b</a> 、 <a href="https://blog.csdn.net/hehaibo2008/article/details/70768955" target="_blank" rel="noopener">https://blog.csdn.net/hehaibo2008/article/details/70768955</a></p>
-<h2 id="开放端口"><a href="#开放端口" class="headerlink" title="开放端口"></a>开放端口</h2><h3 id="安装iptables"><a href="#安装iptables" class="headerlink" title="安装iptables"></a>安装iptables</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install iptables</span><br></pre></td></tr></table></figure>
-<h3 id="添加规则"><a href="#添加规则" class="headerlink" title="添加规则"></a>添加规则</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT</span><br></pre></td></tr></table></figure>
+<h2 id="开放端口"><a href="#开放端口" class="headerlink" title="开放端口"></a>开放端口</h2><h3 id="1、安装iptables"><a href="#1、安装iptables" class="headerlink" title="1、安装iptables"></a>1、安装iptables</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install iptables</span><br></pre></td></tr></table></figure>
+<h3 id="2、添加规则"><a href="#2、添加规则" class="headerlink" title="2、添加规则"></a>2、添加规则</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h3 id="保存规则"><a href="#保存规则" class="headerlink" title="保存规则"></a>保存规则</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo iptables-save</span><br></pre></td></tr></table></figure>
-<h2 id="持久化规则"><a href="#持久化规则" class="headerlink" title="持久化规则"></a>持久化规则</h2><h3 id="安装iptables-persistent"><a href="#安装iptables-persistent" class="headerlink" title="安装iptables-persistent"></a>安装iptables-persistent</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install iptables-persistent</span><br></pre></td></tr></table></figure>
-<h3 id="使用iptables-persistent"><a href="#使用iptables-persistent" class="headerlink" title="使用iptables-persistent"></a>使用iptables-persistent</h3><h4 id="如果系统为Ubuntu14-04"><a href="#如果系统为Ubuntu14-04" class="headerlink" title="如果系统为Ubuntu14.04"></a>如果系统为Ubuntu14.04</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/iptables-persistent save</span><br><span class="line">sudo /etc/init.d/iptables-persistent reload</span><br></pre></td></tr></table></figure>
-<h4 id="如果系统为Ubuntu16-04"><a href="#如果系统为Ubuntu16-04" class="headerlink" title="如果系统为Ubuntu16.04"></a>如果系统为Ubuntu16.04</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo netfilter-persistent save</span><br><span class="line">sudo netfilter-persistent reloasd</span><br></pre></td></tr></table></figure>
-<h3 id="规则保存位置"><a href="#规则保存位置" class="headerlink" title="规则保存位置"></a>规则保存位置</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/etc/iptables/rules.v4</span><br><span class="line">/etc/iptables/rules.v6</span><br></pre></td></tr></table></figure>
+<h3 id="3、保存规则"><a href="#3、保存规则" class="headerlink" title="3、保存规则"></a>3、保存规则</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo iptables-save</span><br></pre></td></tr></table></figure>
+<h2 id="持久化规则"><a href="#持久化规则" class="headerlink" title="持久化规则"></a>持久化规则</h2><h3 id="1、安装iptables-persistent"><a href="#1、安装iptables-persistent" class="headerlink" title="1、安装iptables-persistent"></a>1、安装iptables-persistent</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install iptables-persistent</span><br></pre></td></tr></table></figure>
+<h3 id="2、使用iptables-persistent"><a href="#2、使用iptables-persistent" class="headerlink" title="2、使用iptables-persistent"></a>2、使用iptables-persistent</h3><h4 id="2-1、如果系统为Ubuntu14-04"><a href="#2-1、如果系统为Ubuntu14-04" class="headerlink" title="2.1、如果系统为Ubuntu14.04"></a>2.1、如果系统为Ubuntu14.04</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/iptables-persistent save</span><br><span class="line">sudo /etc/init.d/iptables-persistent reload</span><br></pre></td></tr></table></figure>
+<h4 id="2-1、如果系统为Ubuntu16-04"><a href="#2-1、如果系统为Ubuntu16-04" class="headerlink" title="2.1、如果系统为Ubuntu16.04"></a>2.1、如果系统为Ubuntu16.04</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo netfilter-persistent save</span><br><span class="line">sudo netfilter-persistent reloasd</span><br></pre></td></tr></table></figure>
+<h3 id="3、规则保存位置"><a href="#3、规则保存位置" class="headerlink" title="3、规则保存位置"></a>3、规则保存位置</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/etc/iptables/rules.v4</span><br><span class="line">/etc/iptables/rules.v6</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -511,7 +500,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -544,7 +533,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开放端口"><span class="nav-number">1.</span> <span class="nav-text">开放端口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装iptables"><span class="nav-number">1.1.</span> <span class="nav-text">安装iptables</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加规则"><span class="nav-number">1.2.</span> <span class="nav-text">添加规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保存规则"><span class="nav-number">1.3.</span> <span class="nav-text">保存规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#持久化规则"><span class="nav-number">2.</span> <span class="nav-text">持久化规则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装iptables-persistent"><span class="nav-number">2.1.</span> <span class="nav-text">安装iptables-persistent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用iptables-persistent"><span class="nav-number">2.2.</span> <span class="nav-text">使用iptables-persistent</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#如果系统为Ubuntu14-04"><span class="nav-number">2.2.1.</span> <span class="nav-text">如果系统为Ubuntu14.04</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如果系统为Ubuntu16-04"><span class="nav-number">2.2.2.</span> <span class="nav-text">如果系统为Ubuntu16.04</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#规则保存位置"><span class="nav-number">2.3.</span> <span class="nav-text">规则保存位置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开放端口"><span class="nav-number">1.</span> <span class="nav-text">开放端口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、安装iptables"><span class="nav-number">1.1.</span> <span class="nav-text">1、安装iptables</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、添加规则"><span class="nav-number">1.2.</span> <span class="nav-text">2、添加规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、保存规则"><span class="nav-number">1.3.</span> <span class="nav-text">3、保存规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#持久化规则"><span class="nav-number">2.</span> <span class="nav-text">持久化规则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、安装iptables-persistent"><span class="nav-number">2.1.</span> <span class="nav-text">1、安装iptables-persistent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、使用iptables-persistent"><span class="nav-number">2.2.</span> <span class="nav-text">2、使用iptables-persistent</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1、如果系统为Ubuntu14-04"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.1、如果系统为Ubuntu14.04</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1、如果系统为Ubuntu16-04"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.1、如果系统为Ubuntu16.04</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、规则保存位置"><span class="nav-number">2.3.</span> <span class="nav-text">3、规则保存位置</span></a></li></ol></li></ol></div>
             
 
           </div>
