@@ -333,17 +333,16 @@
 
       
         
-          
-            <p>参考<a href="https://www.jianshu.com/p/2ec5d16db02b、https://blog.csdn.net/hehaibo2008/article/details/70768955" target="_blank" rel="noopener">https://www.jianshu.com/p/2ec5d16db02b、https://blog.csdn.net/hehaibo2008/article/details/70768955</a></p>
+          <p>参考<a href="https://www.jianshu.com/p/2ec5d16db02b" target="_blank" rel="noopener">https://www.jianshu.com/p/2ec5d16db02b</a> 、 <a href="https://blog.csdn.net/hehaibo2008/article/details/70768955" target="_blank" rel="noopener">https://blog.csdn.net/hehaibo2008/article/details/70768955</a></p>
 <h2 id="开放端口"><a href="#开放端口" class="headerlink" title="开放端口"></a>开放端口</h2><h3 id="安装iptables"><a href="#安装iptables" class="headerlink" title="安装iptables"></a>安装iptables</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install iptables</span><br></pre></td></tr></table></figure>
 <h3 id="添加规则"><a href="#添加规则" class="headerlink" title="添加规则"></a>添加规则</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT</span><br></pre></td></tr></table></figure>
-<h3 id="保存规则"><a href="#保存规则" class="headerlink" title="保存规则"></a>保存规则</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo iptables-save</span><br></pre></td></tr></table></figure>
-<h2 id="持久化规则"><a href="#持久化规则" class="headerlink" title="持久化规则"></a>持久化规则</h2><h3 id="安装iptables-persistent"><a href="#安装iptables-persistent" class="headerlink" title="安装iptables-persistent"></a>安装iptables-persistent</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install iptables-persistent</span><br></pre></td></tr></table></figure>
-<h3 id="使用iptables-persistent"><a href="#使用iptables-persistent" class="headerlink" title="使用iptables-persistent"></a>使用iptables-persistent</h3><h4 id="如果系统为Ubuntu14-04"><a href="#如果系统为Ubuntu14-04" class="headerlink" title="如果系统为Ubuntu14.04"></a>如果系统为Ubuntu14.04</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/iptables-persistent save</span><br><span class="line">sudo /etc/init.d/iptables-persistent reload</span><br></pre></td></tr></table></figure>
-<h4 id="如果系统为Ubuntu16-04"><a href="#如果系统为Ubuntu16-04" class="headerlink" title="如果系统为Ubuntu16.04"></a>如果系统为Ubuntu16.04</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo netfilter-persistent save</span><br><span class="line">sudo netfilter-persistent reloasd</span><br></pre></td></tr></table></figure>
-<h3 id="规则保存位置"><a href="#规则保存位置" class="headerlink" title="规则保存位置"></a>规则保存位置</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/etc/iptables/rules.v4</span><br><span class="line">/etc/iptables/rules.v6</span><br></pre></td></tr></table></figure>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/13/ubuntu开放指定端口/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -817,7 +816,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
