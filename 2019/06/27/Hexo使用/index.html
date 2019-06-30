@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="hexo,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="个人学习笔记，计算机科学与技术，自然语言处理，语义关系抽取，机器学习，深度学习">
-<meta name="keywords" content="自然语言处理、NLP、语义关系抽取、RE、机器学习、深度学习">
+<meta name="description" content="日常使用1、将远程仓库更新至本地 1git pull origin hexo 2、创建新的文章 1hexo new [layout] &quot;new artical name&quot; 3、将当前目录下( . 代表当前目录)修改的所有内容从工作区添加到暂存区 1git add . 4、将缓存区内容提交到到本地仓库 1git commit -m &apos;文字说明&apos; 5、将本地版本库推送到远程服务器 1git push">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo使用">
 <meta property="og:url" content="http://yadav.wang/2019/06/27/Hexo使用/index.html">
 <meta property="og:site_name" content="何慕的BLOG">
-<meta property="og:description" content="个人学习笔记，计算机科学与技术，自然语言处理，语义关系抽取，机器学习，深度学习">
+<meta property="og:description" content="日常使用1、将远程仓库更新至本地 1git pull origin hexo 2、创建新的文章 1hexo new [layout] &quot;new artical name&quot; 3、将当前目录下( . 代表当前目录)修改的所有内容从工作区添加到暂存区 1git add . 4、将缓存区内容提交到到本地仓库 1git commit -m &apos;文字说明&apos; 5、将本地版本库推送到远程服务器 1git push">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-27T06:46:47.055Z">
+<meta property="og:updated_time" content="2019-06-30T11:26:10.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用">
-<meta name="twitter:description" content="个人学习笔记，计算机科学与技术，自然语言处理，语义关系抽取，机器学习，深度学习">
+<meta name="twitter:description" content="日常使用1、将远程仓库更新至本地 1git pull origin hexo 2、创建新的文章 1hexo new [layout] &quot;new artical name&quot; 3、将当前目录下( . 代表当前目录)修改的所有内容从工作区添加到暂存区 1git add . 4、将缓存区内容提交到到本地仓库 1git commit -m &apos;文字说明&apos; 5、将本地版本库推送到远程服务器 1git push">
 
 
 
@@ -303,6 +303,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -330,7 +352,25 @@
       
 
       
-        
+        <h1 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h1><p>1、将远程仓库更新至本地</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin hexo</span><br></pre></td></tr></table></figure>
+<p>2、创建新的文章</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] "new artical name"</span><br></pre></td></tr></table></figure>
+<p>3、将当前目录下( . 代表当前目录)修改的所有内容从工作区添加到暂存区</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>4、将缓存区内容提交到到本地仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m '文字说明'</span><br></pre></td></tr></table></figure>
+<p>5、将本地版本库推送到远程服务器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+<p>6、生成并部署博客到服务器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+<h1 id="新设备重新配置"><a href="#新设备重新配置" class="headerlink" title="新设备重新配置"></a>新设备重新配置</h1><p>1、将Github中hexo分支clone到本地( -b hexo 指定克隆的分支)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b hexo git@github.com:reeuq/reeuq.github.io.git</span><br></pre></td></tr></table></figure>
+<p>2、切换至博客目录中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd  reeuq.github.io</span><br></pre></td></tr></table></figure>
+<p>3、安装必要的所需组件，不用再init</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -344,6 +384,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
       
 
       
@@ -414,8 +460,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -441,7 +496,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -452,7 +507,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -475,6 +530,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#日常使用"><span class="nav-number">1.</span> <span class="nav-text">日常使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新设备重新配置"><span class="nav-number">2.</span> <span class="nav-text">新设备重新配置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
